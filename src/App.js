@@ -1,10 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useEffect, useState } from 'react';
+const Root = React.lazy(() => import('./Root'));
 
-function App() {
+const App = () => {
+  //alert('App')
+
+  console.log('a', Root);
   return (
     <div className="App">
-  
+      <Root />
     </div>
   );
 }
